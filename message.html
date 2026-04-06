@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Segunda Fase | Fabio de Melo Vodzik</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="message-page">
+  <main class="message-shell">
+    <section class="message-stage">
+      <p class="message-kicker">Segunda fase</p>
+      <h1 class="message-name" id="visitorName">Usuario</h1>
+      <p class="message-caption">Voce entrou com este nome. Agora escreva sua mensagem para Fabio.</p>
+    </section>
+
+    <form class="message-composer" id="messageForm">
+      <label for="visitorMessage">Envie a mensagem aqui</label>
+      <textarea
+        id="visitorMessage"
+        name="visitorMessage"
+        rows="4"
+        placeholder="Escreva aqui sua proposta, vaga ou mensagem."
+        required
+      ></textarea>
+      <button type="submit" class="submit-button">Enviar mensagem</button>
+      <p class="status-message" id="messageStatus" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <script src="message.js"></script>
+</body>
+</html>
