@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabio de Melo Vodzik | OP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button
+    type="button"
+    class="art-trigger"
+    id="artTrigger"
+    aria-label="Ampliar ilustracao"
+  >
+    <img
+      src="assets/escayu.png"
+      alt="Ilustracao de personagem concept art"
+      class="corner-art"
+    >
+  </button>
+  <main class="page-shell">
+    <section class="hero-panel">
+      <div class="hero-copy">
+        <p class="eyebrow">Concept Art Portfolio</p>
+        <p class="nickname">OP</p>
+        <h1>Fabio de Melo Vodzik</h1>
+        <p class="lead">
+          Artista em busca de uma oportunidade como assistente de arte, com foco em concept art,
+          atmosfera visual e apoio criativo para projetos de games, cinema e ilustracao.
+        </p>
+
+        <div class="hero-meta">
+          <span class="availability">Disponivel para oportunidades</span>
+          <span class="role">Assistente de Arte - Concept Artist</span>
+        </div>
+
+        <div class="feature-grid">
+          <article>
+            <span>01</span>
+            <h2>Ambientes</h2>
+            <p>Criacao de cenarios, mood painting e exploracao visual com linguagem cinematografica.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h2>Personagens</h2>
+            <p>Silhueta, vestuario e leitura visual pensados para apoiar direcao de arte e narrativa.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h2>Processo</h2>
+            <p>Pesquisa, thumbnails, refinamento e suporte visual para times criativos em producao.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="login-panel">
+      <div class="login-card">
+        <p class="brand">Private Contact</p>
+        <h2>Entre para falar comigo</h2>
+        <p class="card-copy">
+          Esta primeira tela funciona como acesso rapido. Depois do login, a pessoa entra
+          na segunda etapa para escrever uma mensagem direta para Fabio.
+        </p>
+
+        <div class="profile-list">
+          <div class="profile-item">
+            <span class="profile-label">Nick</span>
+            <strong>OP</strong>
+          </div>
+          <div class="profile-item">
+            <span class="profile-label">Nome</span>
+            <strong>Fabio de Melo Vodzik</strong>
+          </div>
+          <div class="profile-item">
+            <span class="profile-label">Objetivo</span>
+            <strong>Assistente de Arte</strong>
+          </div>
+          <div class="profile-item">
+            <span class="profile-label">Area</span>
+            <strong>Concept Art e apoio visual</strong>
+          </div>
+        </div>
+
+        <form class="login-form" id="loginForm">
+          <label for="username">Usuario</label>
+          <input id="username" name="username" type="text" placeholder="Digite seu nome de usuario" required>
+
+          <label for="password">Senha</label>
+          <input id="password" name="password" type="password" placeholder="Digite sua senha" required>
+
+          <button type="submit" class="submit-button">Entrar na segunda fase</button>
+          <p class="status-message" id="statusMessage" aria-live="polite"></p>
+        </form>
+
+        <div class="card-footer">
+          <span>O envio final fica na proxima tela e o e-mail nao aparece no site.</span>
+          <a href="#loginForm" class="text-link">Fazer login</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="art-modal" id="artModal" aria-hidden="true">
+    <button type="button" class="art-modal-backdrop" id="artBackdrop" aria-label="Fechar imagem ampliada"></button>
+    <div class="art-modal-panel">
+      <div class="art-inspect-stage" id="artInspectStage">
+        <img
+          src="assets/escayu.png"
+          alt="Ilustracao ampliada de personagem concept art"
+          id="artModalImage"
+          class="art-modal-image"
+        >
+      </div>
+      <p class="art-hint" id="artHint">Clique ou use o scroll do mouse para ampliar. Arraste para inspecionar.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
